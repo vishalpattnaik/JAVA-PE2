@@ -49,4 +49,12 @@ public class FourPowerTest {
 
     }
 
+    @Test
+    public void checkForCharacterReturnMessage() {
+
+        String res = ob.checkPowerOfFour('f');
+        assertEquals("Invalid input", res);
+
+    }
+
 }

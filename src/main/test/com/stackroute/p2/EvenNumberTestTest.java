@@ -24,15 +24,23 @@ public class EvenNumberTestTest {
     }
 
     @Test
-    public void checkEvenNumberTrue() {
+    public void checkEvenNumberTrueReturnMessage() {
 
-        boolean res = ob.isEven(56);
+        boolean res = ob.isEven(100);
         assertEquals(true, res);
 
     }
 
     @Test
-    public void checkEvenNumberFalse() {
+    public void checkEvenNumberFalseReturnMessage() {
+
+        boolean res = ob.isEven(13);
+        assertEquals(false, res);
+
+    }
+
+    @Test
+    public void checkNumberOrCharacterReturnErrorMessage() {
 
         boolean res = ob.isEven(13);
         assertEquals(false, res);
